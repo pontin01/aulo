@@ -13,6 +13,9 @@ Assign a short command to a directory, then simply type `aulo PROMPT` to quickly
 ```
 ### Examples:
 `aulo -c photo /home/user/Desktop/Photos`
+
 `aulo -r photo old_photos`
+
 `aulo old_photos`
+
 `aulo -d old_photos`
