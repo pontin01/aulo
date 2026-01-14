@@ -1,6 +1,7 @@
 #!/bin/bash
 
-curr_path=$(find $HOME -type f -path "*/aulo/aulo.sh" 2>/dev/null)
+curr_path="$(readlink -f "${BASH_SOURCE[0]}")"
+echo $curr_path
 
 if [[ "$curr_path" != $(dirname "$curr_path") ]]; then
     # move ./aulo/ to $HOME
@@ -15,6 +16,4 @@ chmod a+x "$HOME/.local/bin/aulo"
 # add aulo.sh to .bashrc
 echo >> ~/.bashrc
 echo "# aulo" >> ~/.bashrc
-echo "source ~/aulo/search.sh" >> ~/.bashrc
-
-source ~/.bashrc
+echo "source ~/aulo/aulo.sh" >> ~/.bashrc
