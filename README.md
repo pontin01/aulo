@@ -11,8 +11,15 @@ Assign a short command to a directory, then simply type `aulo PROMPT` to quickly
 -r, --rename    rename an OPTION'S command (aulo -r OLD_CMD NEW_CMD)
 -l, --list      list all currently existing OPTIONS
 ```
+
+### Setup
+Simply clone the repo and run `bash install.sh`.
+
 ### Examples:
 `aulo -c photo /home/user/Desktop/Photos`
+
 `aulo -r photo old_photos`
+
 `aulo old_photos`
+
 `aulo -d old_photos`
