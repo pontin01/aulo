@@ -12,4 +12,9 @@ ln -s "$HOME/aulo/aulo.sh" "$HOME/.local/bin/aulo" 2>/dev/null
 chmod a+x "$HOME/aulo/aulo.sh"
 chmod a+x "$HOME/.local/bin/aulo"
 
+# add aulo.sh to .bashrc
+echo >> ~/.bashrc
+echo "# aulo" >> ~/.bashrc
+echo "source ~/aulo/search.sh" >> ~/.bashrc
+
 source ~/.bashrc
